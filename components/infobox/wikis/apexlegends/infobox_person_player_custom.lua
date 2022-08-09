@@ -136,6 +136,8 @@ function CustomPlayer:adjustLPDB(lpdbData)
 	if String.isNotEmpty(_args.team2) then
 		lpdbData.extradata.team2 = mw.ext.TeamTemplate.raw(_args.team2).page
 	end
+	
+	lpdbData.retired = Variables.varDefault('retired')
 
 	return lpdbData
 end
