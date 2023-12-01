@@ -35,14 +35,6 @@ function CustomTeam:createWidgetInjector()
 	return CustomInjector()
 end
 
-function CustomInjector:addCustomCells(widgets)
-	table.insert(widgets, Cell{
-		name = 'In-Game Leader',
-		content = {_team.args.igl}
-	})
-	return widgets
-end
-
 function CustomTeam:createBottomContent()
 	return Template.expandTemplate(
 		mw.getCurrentFrame(),
