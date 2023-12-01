@@ -35,6 +35,10 @@ function CustomTeam:createWidgetInjector()
 	return CustomInjector()
 end
 
+function CustomInjector:addCustomCells(widgets)
+	return widgets
+end
+
 function CustomTeam:createBottomContent()
 	return Template.expandTemplate(
 		mw.getCurrentFrame(),
